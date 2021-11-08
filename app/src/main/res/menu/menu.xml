@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/emergency_contact"
+    android:icon="@drawable/emergencycontact"
+    android:title="Emergency Contacts"/>
+
+    <item
+        android:id="@+id/call"
+        android:icon="@drawable/ic_baseline_call_24"
+        android:title="Emergency Call"/>
+
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/profile"
+
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/join"
+        android:icon="@drawable/join"
+        android:title="Join"/>
+    <item
+        android:id="@+id/liveLocation"
+        android:icon="@drawable/location"
+        android:title="Live location"/>
+    <item
+        android:id="@+id/manage"
+        android:icon="@drawable/manage"
+        android:title="Manage"/>
+
+
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
+
+
+</menu>

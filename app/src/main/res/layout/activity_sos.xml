@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="@color/primary"
+    tools:context=".activities.SosActivity"
+    android:fitsSystemWindows="true"
+
+    tools:openDrawer="">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
+        android:background="@color/primary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+
+        app:menu="@menu/menu"
+        android:layout_gravity="start"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sosButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sos_circle" />
+
+
+            <Button
+                android:id="@+id/cancelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel SOS"
+                android:visibility="invisible"
+                android:background="@drawable/custom_textview"
+                android:textColor="@color/secondary"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sosButton" />
+
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:id="@+id/swipeCall"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                app:button_image_enabled="@drawable/ic_baseline_call_24"
+                app:button_image_disabled="@drawable/ic_baseline_call_24"
+                app:button_background="@drawable/custom_textview"
+                app:button_bottom_padding="5dp"
+
+                app:button_top_padding="5dp"
+                app:button_left_padding="5dp"
+                app:button_right_padding="5dp"
+                app:inner_text_bottom_padding="10dp"
+                app:inner_text_left_padding="10dp"
+                app:inner_text_top_padding="10dp"
+                app:inner_text_right_padding="10dp"
+                android:layout_marginTop="15dp"
+                app:inner_text_background="@drawable/rectangle_1"
+                app:inner_text="Swipe for Emergency Call"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cancelText" />
+
+            <TextView
+                android:id="@+id/sosText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:layout_constraintBottom_toBottomOf="@+id/sosButton"
+                app:layout_constraintEnd_toEndOf="@+id/sosButton"
+                app:layout_constraintHorizontal_bias="0.465"
+                app:layout_constraintStart_toStartOf="@+id/sosButton"
+                app:layout_constraintTop_toTopOf="@+id/sosButton"
+                app:layout_constraintVertical_bias="0.466"
+                android:text="SOS"
+
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="42sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+        android:id="@+id/starShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="-50dp"
+        android:layout_alignParentRight="true"
+
+        app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/sosAlertText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending SOS alert in..."
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+           android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/starShape"
+            android:textSize="28sp"/>
+
+    <ImageView
+        android:id="@+id/starShape2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_alignParentLeft="true"
+
+        app:srcCompat="@drawable/star" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menuham"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+
+        app:navigationIcon="@drawable/menuham" />
+
+
+    <ImageView
+        android:id="@+id/starShape3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_alignParentBottom="true"
+
+        app:srcCompat="@drawable/star" />
+
+    <ImageView
+        android:id="@+id/starShape4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginRight="-50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        app:srcCompat="@drawable/star" />
+
+
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Crimson Alert</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_live_maps">Map</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>
